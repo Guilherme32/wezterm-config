@@ -37,6 +37,16 @@ _keys = {
         mods = 'ALT',
         action = act.ActivateTabRelative(1),
     },
+    {
+        key = "v",
+        mods = "CTRL",
+        action = act.PasteFrom "Clipboard",
+    },
+    {
+        key = "c",
+        mods = "CTRL",
+        action = act.CopyTo "Clipboard",
+    },
 }
 
 _colors = {
