@@ -4,27 +4,17 @@ act = wezterm.action
 _keys = {
     {
         key = 't',
-        mods = 'CTRL',
+        mods = 'ALT',
         action = act.SpawnTab 'CurrentPaneDomain',
     },
     {
-        key = 'LeftArrow',
-        mods = 'CTRL',
-        action = act.ActivatePaneDirection 'Left',
-    },
-    {
-        key = 'RightArrow',
-        mods = 'CTRL',
-        action = act.ActivatePaneDirection 'Right',
-    },
-    {
         key = 'UpArrow',
-        mods = 'CTRL',
+        mods = 'ALT',
         action = act.ActivatePaneDirection 'Up',
     },
     {
         key = 'DownArrow',
-        mods = 'CTRL',
+        mods = 'ALT',
         action = act.ActivatePaneDirection 'Down',
     },
     {
@@ -43,9 +33,19 @@ _keys = {
         action = act.PasteFrom "Clipboard",
     },
     {
-        key = "c",
+        key = "x",
         mods = "CTRL",
         action = act.CopyTo "Clipboard",
+    },
+    {
+        key = "p",
+        mods = "CTRL",
+        action = act.SplitVertical { domain = "CurrentPaneDomain" }
+    },
+    {
+        key = "w",
+        mods = "ALT",
+        action = act.CloseCurrentPane { confirm = true }
     },
 }
 
